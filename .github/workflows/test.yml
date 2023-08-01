@@ -1,0 +1,11 @@
+name: Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name:  Test
+        run:   curl http://checkip.dyndns.org/
